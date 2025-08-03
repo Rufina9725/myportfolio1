@@ -1,21 +1,32 @@
-/* Import a clean professional font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #1c1c1c;  /* Slightly softer and richer than #202020 */
+  color: #e0e0e0; /* Good contrast */
+  letter-spacing: 0.3px; /* Adds a bit of visual clarity */
+  font-size: 16px;
   line-height: 1.6;
-  background-color: #121212;
   color: #e0e0e0;
+
+  background-image: url('data.jpg'); /* Replace with your image filename */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps background fixed when scrolling */
+}
+
 }
 
 header {
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: #0f0e0e;
+  color: #090808;
   padding: 2rem 1rem;
   text-align: center;
 }
+
 
 header h1 {
   margin-bottom: 0.2rem;
@@ -42,31 +53,15 @@ main {
 
 section {
   margin-bottom: 3rem;
-  background-color: #1e1e1e;
+  background-color: #0f0e0e;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 h2 {
   color: #90caf9;
   font-size: 1.5rem;
-}
-
-a.github {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #1976d2;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-a.github:hover {
-  background-color: #1565c0;
 }
 
 footer {
@@ -77,10 +72,6 @@ footer {
   font-size: 0.9rem;
 }
 
-h2 {
-  color: #90caf9;
-}
-
 a.github {
   display: inline-block;
   margin-top: 0.5rem;
@@ -95,74 +86,18 @@ a.github:hover {
   background-color: #1565c0;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #1f1f1f;
-  color: #999;
-}
 
-}
 
-a.github {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  background-color: #004080;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-a.github:hover {
-  background-color: #003060;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #eee;
-  color: #555;
-}
-
-.profile.jpeg {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: 1rem;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
 .container {
   max-width: 900px;
-  margin: 2rem auto; /* Adds space between each container */
-  padding: 2rem;
-  background-color: #1c1c1c;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-.data.jpg {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-top: 1rem;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-..container.hero-section {
-  background-image: url('cell.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  color: white;
-  border-radius: 10px;
   margin: 2rem auto;
-  max-width: 960px;
+  padding: 2rem;
+  background-color: #121212; /* Darker but distinguishable from body */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Slight elevation */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark layer */
@@ -171,3 +106,322 @@ footer {
   text-align: center;
   width: 100%;
 }
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #111; /* Match your site background */
+  min-height: 100vh;
+}
+
+.about-card {
+  background-color: #bb8282;
+  color: #fff;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.about-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-highlights h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.about-highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-highlights li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-highlights li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .about-card {
+    padding: 20px;
+  }
+}
+
+
+.about-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #5a3e3e;
+  color: #fff;
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: #555;
+}
+.skills-section {
+  padding: 40px;
+    background-color: #080808;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background-color:  #bb8282;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.projects-section {
+  padding: 40px;
+  background-color: #080808;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.project-card {
+  background-color: #bb8282;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  max-width: 400px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
+
+.see-more {
+  margin-top: 30px;
+}
+
+.see-more-button {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.see-more-button:hover {
+  border-color: #007bff;
+}
+.contact-section {
+  padding: 40px;
+   background-color: #080808;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: rgb(18, 17, 17);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+.hero_section {
+  background-color: #080808;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #0bf15f;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+.about-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.overlay {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6f6666;
+  margin-bottom: 15px;
+}
+
+.about-buttons .btn {
+  background-color: #bb8282;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.about-buttons .btn:hover {
+  background-color: #a06e6e;
+}
+.back-to-top {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-to-top .btn {
+  padding: 10px 20px;
+  background-color: #bb8282;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.back-to-top .btn:hover {
+  background-color: #a76f6f;
+}
+
+

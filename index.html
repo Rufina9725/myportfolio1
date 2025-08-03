@@ -5,56 +5,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
- <header class="container hero_section">
+<header class="hero_section">
   <div class="overlay">
-  <h1>Rufina Masaiwe</h1>
-  <img src="profile.jpeg" alt="Rufina Masaiwe" class="profile.jpeg">
-  <p>Data Scientist |Software Engineer |Tech Enthusiast</p>
-</div>
+    <div class="intro">
+      <img src="rufina.jpeg" alt="Rufina Masaiwe" class="profile-image">
+        <h1>Hello, I'm Rufina</h1>
+    <p>Welcome to my portfolio</p>
+      </p>
+    </div>
+  </div>
+
+    <nav class="about-buttons">
+      <a href="#home" class="btn">Home</a>
+      <a href="#about" class="btn">About Me</a>
+      <a href="#skills" class="btn">Skills</a>
+      <a href="#projects" class="btn">Projects</a>
+      <a href="#contact" class="btn">Contact</a>
+    </nav>
 </header>
 
-  <nav>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul id="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <section id="about" class="container">
+<section class="container" id="about">
+  <div class="about-card">
     <h2>About Me</h2>
-    <p>Hello! I’m Rufina,a data scientist driven by curiosity and impact. I thrive on turning raw data into actionable insights through thoughtful analysis, clean code, and effective storytelling.
-         My work combines technical rigor-like building predictive models and writing efficient pipelines-with a practical mindset focused on solving real-world problems.
-I’m especially passionate about:
-Exploring data to uncover hidden patterns
-Building machine learning models that make accurate predictions
-Communicating findings clearly to technical and non-technical audiences
-Continuously learning—because the field is always evolving
-Whether it's improving business decisions, enhancing user experience, or uncovering untapped opportunities in data, I see every project as a chance to learn, grow, and create value.</p>
-  </section>
+    <p class="intro">
+       <strong>Hello! I’m Rufina, </strong>a data scientist driven by curiosity and impact. I thrive on turning raw data into actionable insights through thoughtful analysis, clean code, and effective storytelling.
+    </p>
 
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Titanic ML Classifier</h3>
-      <p>A machine learning project predicting Titanic survivors using Decision Trees.</p>
-      <a href="https://github.com/Rufina9725/titanic0" target="_blank">View on GitHub</a>
+    <p>
+      My work combines technical rigor-like building predictive models and writing efficient pipelines-with a practical mindset focused on solving real-world problems.
+    </p>
+
+    <div class="about-highlights">
+      <h3>What I'm Passionate About</h3>
+      <ul>
+        <li>🔍 Cleaning and Exploring data to uncover hidden patterns</li>
+        <li>🤖 Building machine learning models that make accurate predictions</li>
+        <li>📣 Communicating findings clearly to technical and non-technical audiences</li>
+        <li>📚 Continuously learning because the field is always evolving</li>
+      </ul>
     </div>
-  </section>
 
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>Email:rahatirufina@gmail.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rufinamasaiwe" target="_blank">https://www.linkedin.com/in/rufinamasaiwe</a></p>
-  </section>
+    <p>
+      Whether it's improving business decisions, enhancing user experience, or uncovering untapped opportunities in data, I see every project as a chance to learn, grow, and create value.
+    </p>
+  </div>
+</section>
 
-  <footer>
+<section class="projects-section" id="projects">
+  <h2>Featured Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Titanic Survival Prediction</h3>
+      <p>Built a Decision Tree Classifier to predict passenger survival using feature engineering and model evaluation.</p>
+      <a href="https://github.com/Rufina9725/titanic0" target="_blank" class="project-link">View on GitHub</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>EV Data Analysis</h3>
+      <p>Performed data cleaning and visualization on electric vehicle data to uncover patterns in adoption and usage.</p>
+      <a href="https://github.com/Rufina9725/ev-data-analysis-data-cleaning-and-visualization" target="_blank" class="project-link">View on GitHub</a>
+    </div>
+
+  </div>
+
+    <div class="see-more">
+      <a href="https://github.com/Rufina9725" target="_blank" class="see-more-button">See More Projects on GitHub</a>
+    </div>
+</section>
+
+
+
+<section class="skills-section" id="skills">
+  <h2>My Top Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <i class="fas fa-chart-line"></i>
+      <h3>Data Analysis & Visualization</h3>
+      <p>Skilled in Pandas, Matplotlib, Seaborn, Plotly for exploring and visualizing data.</p>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fas fa-robot"></i>
+      <h3>Machine Learning</h3>
+      <p>Experience with scikit-learn, Decision Trees, Random Forests, and XGBoost for building predictive models.</p>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fab fa-python"></i>
+      <h3>Python Programming</h3>
+      <p>Proficient in writing clean and reusable Python code for data science workflows.</p>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fas fa-database"></i>
+      <h3>SQL & Databases</h3>
+      <p>Comfortable writing SQL queries and working with relational databases.</p>
+    </div>
+    
+    <div class="skill-card">
+      <i class="fas fa-project-diagram"></i>
+      <h3>End-to-End Projects</h3>
+      <p>Skilled at handling real-world data projects from problem definition to communication.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+   <div class="social-icons">
+    <a href="https://wa.me/254715127738" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="mailto:rahatirufina@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/Rufina9715" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/rufinamasaiwe" target="_blank"><i class="fab fa-linkedin"></i></a>
+   </div>
+
+
+  <form class="contact-form" action="https://formspree.io/f/xnnzbgln" method="POST" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+<div class="back-to-top">
+  <a href="#top" class="btn">Top ↑</a>
+</div>
+
+<footer>
     <p>&copy; 2025 Rufina Masaiwe. All rights reserved.</p>
-  </footer>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const action = form.action;
+      fetch(action, {
+        method: "POST",
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          alert("Thanks for your message!");
+          form.reset();
+        } else {
+          alert("Oops! Something went wrong.");
+        }
+      });
+    });
+  });
+</script>
+
 </body>
 </html>
